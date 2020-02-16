@@ -37,6 +37,11 @@ plugins {
   id "com.diffplug.gradle.spotless" version "3.24.2" apply false
 }
 
+buildScan {
+    termsOfServiceUrl = "https://gradle.com/terms-of-service"
+    termsOfServiceAgree = "yes"
+}
+
 apply plugin: 'nebula.info-scm'
 apply from: 'gradle/build-scan.gradle'
 apply from: 'gradle/build-complete.gradle'
