@@ -8,3 +8,6 @@ branches:
   - master
 script:
   - ./gradlew --continue clean build --scan -s -p modules/ingest-geoip/
+  - ./gradlew --continue clean build --scan -s -p modules/ingest-user-agent/
+  - ./gradlew --continue clean build --scan -s -p modules/mapper-extras/
+  - ./gradlew --continue clean build --scan -s -p modules/systemd/
